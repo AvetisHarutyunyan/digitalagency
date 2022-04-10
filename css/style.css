@@ -65,7 +65,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 header {
   background-image: url("../images/header__district.jpg");
-  background-position: left;
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
   height: 55em;

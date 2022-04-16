@@ -18,17 +18,21 @@ function navside() {
     const burger = document.querySelector("#burger");
     const nav = document.querySelector("#navside");
     const closeBtn = document.querySelector("#closeBtn");
+    const body = document.querySelector("body");
 
     burger.addEventListener("click", () => {
         nav.classList.add("show-nav");
+        body.classList.add("active-dark");
     });
     closeBtn.addEventListener("click", () => {
         nav.classList.remove("show-nav");
+        body.classList.remove("active-dark");
     });
 
     document.addEventListener("mouseup", (e) => {
         if(e.target !== closeBtn && e.target !== nav) {
             nav.classList.remove("show-nav");
+            body.classList.remove("active-dark");
         }
     });
 }

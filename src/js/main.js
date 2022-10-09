@@ -1,3 +1,5 @@
+"use strict";
+
 function activeLinks() {
     const lists = document.querySelector(".nav-lists");
     const links = document.querySelectorAll(".nav_link");
@@ -36,7 +38,7 @@ function navside() {
 }
 navside();
 
-function choose() {
+function selects() {
     const selectItem = document.querySelectorAll(".select__item");
 
     selectItem.forEach((item) => {
@@ -45,4 +47,4 @@ function choose() {
         });
     });
 }
-choose();
+selects();

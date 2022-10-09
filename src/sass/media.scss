@@ -157,13 +157,18 @@
     .choose__items {
         .choose__selects__item {
             overflow-y: scroll;
-            &::-webkit-scrollbar{
+
+            &::-webkit-scrollbar {
                 width: 0;
             }
+
             .select__item {
-                &.show-text{
-                    height: 200px;
+                overflow: visible;
+
+                &.show-text {
+                    height: 225px;
                 }
+
                 .select__text_item {
                     .text_item {
                         font-size: 18px;
@@ -185,37 +190,49 @@
         }
     }
 
-    .about__items{
+    .about__items {
         .about__text_item {
-            .about__text{
+            .about__text {
                 font-size: 16px;
                 line-height: 28px;
-            }  
+            }
         }
     }
 }
 
 @media screen and (max-width: 428px) {
-    .title_item {    
+    .title_item {
         .title {
             font-size: 25px;
         }
     }
 
-    .header__text_item{
-        .header__text{
+    .header__text_item {
+        .header__text {
             font-size: 17px;
         }
 
-        .header__buttons{
+        .header__buttons {
             display: flex;
             flex-direction: column;
             row-gap: 20px;
         }
     }
 
-    .choose__section{
+    .choose__section {
         margin-top: 116px;
+    }
+
+    .choose__items {
+        .choose__selects__item {
+            overflow-y: scroll;
+
+            .select__item {
+                &.show-text {
+                    height: 245px;
+                }
+            }
+        }
     }
 }
 
@@ -226,11 +243,38 @@
             line-height: 38px;
         }
     }
+
+    .choose__items {
+        .choose__selects__item {
+            overflow-y: scroll;
+
+            .select__item {
+                &.show-text {
+                    height: 260px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .choose__items {
+        .choose__selects__item {
+            overflow-y: scroll;
+
+            .select__item {
+                &.show-text {
+                    height: 280px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 993px) {
-    .header__navbar{
-        .navside{
+    .header__navbar {
+        .navside {
             position: absolute;
             right: -110%;
         }
